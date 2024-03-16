@@ -1,0 +1,53 @@
+{
+  "name": "fei-vscode-theme",
+  "displayName": "Fei Theme",
+  "description": "Fei theme for VS Code",
+  "version": "1.0.1",
+  "publisher": "yangfei",
+  "license": "MIT",
+  "icon": "icon.png",
+  "$schema": "https://json.schemastore.org/jsconfig",
+  "scripts": {
+    "dev": "nodemon --watch src src/index.js development",
+    "build": "npm run build:light && npm run build:dark",
+    "build:light": "node src/index.js production light",
+    "build:dark": "node src/index.js production dark",
+    "package": "vsce package"
+  },
+  "engines": {
+    "vscode": "^1.87.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/geekip/fei-vscode-theme"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "fei",
+    "light",
+    "dark"
+  ],
+  "devDependencies": {
+    "color": "^4.2.3",
+    "glob": "^7.1.6",
+    "nodemon": "^2.0.3",
+    "vsce": "^2.15.0"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "Fei Light",
+        "uiTheme": "vs",
+        "path": "./themes/light.json"
+      },
+      {
+        "label": "Fei Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark.json"
+      }
+    ]
+  }
+}

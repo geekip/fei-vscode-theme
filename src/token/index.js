@@ -1,0 +1,5 @@
+const path = require('path')
+const glob = require('glob')
+const files = path.resolve(__dirname, '!(index)*.js')
+const modules = glob.sync(files).map(file => require(file))
+module.exports = modules.filter(item => item.length).reduce((a, b) => a.concat(b))
