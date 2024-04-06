@@ -84,22 +84,22 @@ module.exports = {
     light: colors.gray.lighten(10),
     dark: colors.gray.darken(75)
   }),
-  "listFilterWidget.outline": "#f00",
-  "listFilterWidget.noMatchesOutline": colors.red.rgb,
+  // "listFilterWidget.outline": "#00f",
+  // "listFilterWidget.noMatchesOutline": colors.red.rgb,
   // "listFilterWidget.shadow": "#f00",
   // 过滤文件背景
   "list.filterMatchBackground": ui.selection.alpha(70),
   // 过滤文件边框
   // "list.filterMatchBorder": colors.blue.rgb,
-  "list.deemphasizedForeground": "#f00",
-  "list.dropBetweenBackground": "#f00",
+  // "list.deemphasizedForeground": "#f00",
+  // "list.dropBetweenBackground": "#f00",
   // 缩进参考线
   "tree.indentGuidesStroke": pick({
     light: colors.white.darken(20),
     dark: colors.gray.darken(60)
   }),
   // "tree.inactiveIndentGuidesStroke": "#f00",
-  "tree.tableColumnsBorder": "#f00",
-  "tree.tableOddRowsBackground": "#f00"
+  // "tree.tableColumnsBorder": "#f00",
+  // "tree.tableOddRowsBackground": "#f00"
 
 }

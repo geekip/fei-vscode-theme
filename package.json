@@ -2,7 +2,7 @@
   "name": "fei-vscode-theme",
   "displayName": "Fei Theme",
   "description": "Fei theme for VS Code",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "publisher": "yangfei",
   "license": "MIT",
   "icon": "icon.png",
